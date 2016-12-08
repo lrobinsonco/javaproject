@@ -1,0 +1,39 @@
+body {
+  background: radial-gradient(circle, white, black);
+}
+.btn {
+   border-top: 1px solid #e4ebf0;
+   background: #3a4d59;
+   background: -webkit-gradient(linear, left top, left bottom, from(#1092e8), to(#3a4d59));
+   background: -webkit-linear-gradient(top, #1092e8, #3a4d59);
+   background: -moz-linear-gradient(top, #1092e8, #3a4d59);
+   background: -ms-linear-gradient(top, #1092e8, #3a4d59);
+   background: -o-linear-gradient(top, #1092e8, #3a4d59);
+   padding: 17.5px 35px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 17px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.btn:hover {
+  border-top-color: #1195ed;
+  background: #1195ed;
+  color: #5c10e8;
+  cursor: pointer;
+   }
+.btn:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+button img {
+     margin-left: -20px;
+     vertical-align: middle;
+   }

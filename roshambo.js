@@ -1,3 +1,50 @@
+$(document).ready(function(){
+  $("#link").hover(function(){
+                 $("#article").toggle(1000);
+               })
+
+        var url = 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=8bit';
+//http://giphy.com/gifs/rock-paper-scissors-YXfnqjSWKKpPi
+//http://media1.giphy.com/media/IgRsFEbEsfPBS/giphy.gif
+//http://media1.giphy.com/media/Bx2JBIEcYSddm/giphy.gif
+          $.getJSON('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=8bit', function(object) {
+            var imageSource = object.data.image_original_url;
+            var image = $('<img src=' + imageSource + ' />');
+            image.appendTo($('#gif'));
+          });
+})
+
+    // $.ajax({
+//         type: "GET",
+//         url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=Jimi_Hendrix&callback=?",
+//         contentType: "application/json; charset=utf-8",
+//         async: false,
+//         dataType: "json",
+//         success: function (data, textStatus, jqXHR) {
+//
+//             var markup = data.parse.text["*"];
+//             var blurb = $("#article").html(markup);
+// console.log(data)
+//             // remove links as they will not work
+//             blurb.find('a').each(function() { $(this).replaceWith($(this).html()); });
+//
+//             // remove any references
+//             blurb.find('sup').remove();
+//
+//             // remove cite error
+//             blurb.find('.mw-ext-cite-error').remove();
+//             $('#article').html($(blurb).find('p'));
+//
+//         },
+//         error: function (errorMessage) {
+//         }
+//     });
+
+
+
+
+
+
 //var counter = {computer: 0, human:0}
 var compScore = 0
 var humanScore = 0

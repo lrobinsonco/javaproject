@@ -1,5 +1,9 @@
 body {
-  background: radial-gradient(circle, white, black);
+  background: radial-gradient(circle, white, white);
+  font-family: 'Press Start 2P', cursive;
+}
+#article {
+  display: none;
 }
 .btn {
    border-top: 1px solid #e4ebf0;
@@ -19,7 +23,7 @@ body {
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
    font-size: 17px;
-   font-family: Helvetica, Arial, Sans-Serif;
+   /*font-family: Helvetica, Arial, Sans-Serif;*/
    text-decoration: none;
    vertical-align: middle;
    }
@@ -34,6 +38,23 @@ body {
    background: #1b435e;
    }
 button img {
-     margin-left: -20px;
+     margin-left: -40px;
+     margin-bottom: auto;
      vertical-align: middle;
    }
+#gif{
+  position: relative;
+     margin: 0 auto;
+     top: 0;
+     left: 0;
+     text-align: center;
+     width: 600px;
+     /*z-index: 10;*/
+     /*background-color: #fff;
+     padding: 20px;
+     border-radius: 15px 15px 15px 15px;
+     border: 6px solid #000000;*/
+     /*font-family: sans-serif;*/
+     flex : auto;;
+   }
+}

@@ -25,15 +25,16 @@ The game is often used as a choosing method in a way similar to coin flipping, d
   type="application/x-shockwave-flash"></div></center>
   <center><p><h2><font color= "blue">Click One:</font></h2></p></center>
 <!-- <button class="play" type="submit" onclick="playthevideo()">play</button> -->
-<center><button class="btn" type="submit" value="Submit" onclick="playGame('rock')"><img src="/Users/home/Desktop/javaproject/pics/noun_88661_cc.svg" alt="rock" WIDTH=200 HEIGHT=200>STONE</button>
-<button class="btn" type="submit" value="Submit" onclick="playGame('paper')"><img src="/Users/home/Desktop/javaproject/pics/noun_88662_cc.svg" alt="paper" WIDTH=200 HEIGHT=200>PARCHMENT</button>
-<button class="btn" type="submit" value="Submit" onclick="playGame('scissors')"><img src="/Users/home/Desktop/javaproject/pics/noun_88666_cc.svg" alt="scissors"WIDTH=200 HEIGHT=200>SHEARS</button></center>
+<center><button id="btn" type="submit" value="Submit" onclick="playGame('rock')"><img src="/Users/home/Desktop/javaproject/pics/noun_88661_cc.svg" alt="rock" WIDTH=200 HEIGHT=200>STONE</button>
+<button id="btn" type="submit" value="Submit" onclick="playGame('paper')"><img src="/Users/home/Desktop/javaproject/pics/noun_88662_cc.svg" alt="paper" WIDTH=200 HEIGHT=200>PARCHMENT</button>
+<button id="btn" type="submit" value="Submit" onclick="playGame('scissors')"><img src="/Users/home/Desktop/javaproject/pics/noun_88666_cc.svg" alt="scissors"WIDTH=200 HEIGHT=200>SHEARS</button></center>
 
 <center><p><h2><font color= "blue" id="computerChoice"</font></h2></p></center>
 <center><p><h2><font color= "blue" id="result"</font></h2></p></center>
 <center><p><h2><font color= "blue" id="winner"</font></h2></p></center>
 <center><p><h2><font color= "blue" id="compScore"</font></h2></p></center>
 <center><p><h2><font color= "blue" id="humanScore"</font></h2></p></center>
+<center><button id="gifbtn">gif</button></center>
 <center><div id="gif" style= "width:600px;height:400px;"></div></center>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->

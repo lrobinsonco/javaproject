@@ -1,11 +1,16 @@
 body {
-  background: radial-gradient(circle, white, white);
+  background: radial-gradient(circle, black, white);
   font-family: 'Press Start 2P', cursive;
+}
+#link{
+  font-size: 100px;
+  color: blue;
 }
 #article {
   display: none;
 }
 .btn {
+  font-family: 'Press Start 2P', cursive;
    border-top: 1px solid #e4ebf0;
    background: #3a4d59;
    background: -webkit-gradient(linear, left top, left bottom, from(#1092e8), to(#3a4d59));
@@ -23,7 +28,6 @@ body {
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
    font-size: 17px;
-   /*font-family: Helvetica, Arial, Sans-Serif;*/
    text-decoration: none;
    vertical-align: middle;
    }
@@ -35,30 +39,108 @@ body {
    }
 .btn:active {
    border-top-color: #1b435e;
-   background: #1b435e;
+   background: red;
    }
+
+
 button img {
      margin-left: -40px;
-     margin-bottom: auto;
+     margin-bottom: -20px;
      vertical-align: middle;
    }
+
+
 #gif{
-  position: relative;
+      display: inline-block;;
      margin: 0 auto;
      top: 0;
      left: 0;
      text-align: center;
      width: 600px;
      background-size: auto;
-     /*z-index: 10;*/
-     /*background-color: #fff;
-     padding: 20px;
-     border-radius: 15px 15px 15px 15px;
-     border: 6px solid #000000;*/
-     /*font-family: sans-serif;*/
      flex : auto;;
    }
 .resize{
   width: 400px;
   height: 400px;
 }
+
+#results > p {
+  /*color : transparent;*/
+}
+
+p {
+  color: blue;
+
+}
+
+.fadeIn1{
+  opacity: 0;
+  animation:fadeIn ease-in 1;
+  animation-duration: 2s;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+}
+
+.fadeIn2 {
+  opacity: 0;
+  animation:fadeIn ease-in 1;
+  animation-duration: 2.5s;
+  animation-name: fadein;
+animation-fill-mode: forwards;
+}
+
+.fadeIn3 {
+  opacity: 0;
+  animation:fadeIn ease-in 1;
+  animation-duration: 3s;
+  animation-name: fadein;
+animation-fill-mode: forwards;
+}
+
+.fadeIn4 {
+  opacity: 0;
+  animation:fadeIn ease-in 1;
+  animation-duration: 3.5s;
+  animation-name: fadein;
+animation-fill-mode: forwards;
+}
+
+.fadeIn5 {
+  opacity: 0;
+  animation:fadeIn ease-in 1;
+  animation-duration: 4s;
+  animation-name: fadein;
+animation-fill-mode: forwards;
+}
+
+
+@keyframes fadein {
+from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*#winner, #compScore, #humanScore {
+  opacity : 0;
+}
+
+faded1 {
+  opacity : 1;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+
+faded2 {
+  opacity: 1;
+  animation-duration: 5s;
+  animation-name: fadein;
+}
+
+@@keyframes faderIn {
+  from { { opacity: 0; } to { opacity : 1;} }
+}*/

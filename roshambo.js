@@ -1,7 +1,4 @@
 
-
-
-
 $(document).ready(function() {
     $("#link").click(function() {
         $("#article").toggle(2000);

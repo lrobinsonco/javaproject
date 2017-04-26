@@ -1,16 +1,19 @@
 body {
   background: radial-gradient(circle, black, white);
-  font-family: 'Press Start 2P', cursive;
+  /*font-family: 'Press Start 2P', cursive;*/
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
 }
 #link{
   font-size: 100px;
   color: blue;
+  font-family: 'Press Start 2P', cursive;
 }
 #article {
   display: none;
 }
 .btn {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
    border-top: 1px solid #e4ebf0;
    background: #3a4d59;
    background: -webkit-gradient(linear, left top, left bottom, from(#1092e8), to(#3a4d59));
@@ -30,6 +33,7 @@ body {
    font-size: 17px;
    text-decoration: none;
    vertical-align: middle;
+   margin-top: 10px;
    }
 .btn:hover {
   border-top-color: #1195ed;
@@ -43,9 +47,12 @@ body {
    }
 
 
-button img {
-     margin-left: -40px;
-     margin-bottom: -20px;
+button {
+    width: 200px;
+    height: 200px;
+
+     margin-left: 40px;
+     margin-bottom: 20px;
      vertical-align: middle;
    }
 
@@ -66,7 +73,7 @@ button img {
 }
 
 #results > p {
-  /*color : transparent;*/
+  color : red;
 }
 
 p {
